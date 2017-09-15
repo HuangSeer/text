@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="KaiJfpTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开具发票" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UE7-5u-Ger">
+                        <rect key="frame" x="8" y="8" width="59" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.18344516029999999" green="0.18688867109999999" blue="0.2029343505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3k-fl-xsK">
+                        <rect key="frame" x="180" y="0.0" width="63" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="5" maxX="30" maxY="5"/>
+                        <state key="normal" title="个人" image="yy_select_disabled">
+                            <color key="titleColor" red="0.18344516029999999" green="0.18688867109999999" blue="0.2029343505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="GerenBlock:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4u1-Ch-Y0e"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJI-P9-6mS">
+                        <rect key="frame" x="251" y="0.0" width="65" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="5" maxX="30" maxY="5"/>
+                        <state key="normal" title="公司" image="yy_select_disabled">
+                            <color key="titleColor" red="0.18344516029999999" green="0.18688867109999999" blue="0.2029343505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="GsiBlock:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="49V-XQ-mwe"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOn-BD-Yni">
+                        <rect key="frame" x="75" y="0.0" width="103" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AJI-P9-6mS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2RZ-NT-VXE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aOn-BD-Yni" secondAttribute="bottom" constant="-8.5" id="3mM-0h-bP7"/>
+                    <constraint firstItem="UE7-5u-Ger" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="8ln-Ue-fPm"/>
+                    <constraint firstAttribute="trailing" secondItem="AJI-P9-6mS" secondAttribute="trailing" constant="4" id="DYO-W2-qMU"/>
+                    <constraint firstItem="f3k-fl-xsK" firstAttribute="leading" secondItem="UE7-5u-Ger" secondAttribute="trailing" constant="113" id="FKu-yD-nKc"/>
+                    <constraint firstItem="AJI-P9-6mS" firstAttribute="leading" secondItem="f3k-fl-xsK" secondAttribute="trailing" constant="8" id="Hxb-V2-O8b"/>
+                    <constraint firstItem="aOn-BD-Yni" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="UMv-BT-49B"/>
+                    <constraint firstAttribute="trailing" secondItem="f3k-fl-xsK" secondAttribute="trailing" constant="77" id="c3d-Qn-Wdc"/>
+                    <constraint firstAttribute="bottom" secondItem="AJI-P9-6mS" secondAttribute="bottom" id="emL-3O-OOI"/>
+                    <constraint firstItem="aOn-BD-Yni" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-134" id="fks-n2-lPh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="UE7-5u-Ger" secondAttribute="bottom" id="gtq-rO-dS7"/>
+                    <constraint firstItem="aOn-BD-Yni" firstAttribute="leading" secondItem="AJI-P9-6mS" secondAttribute="trailing" constant="-241" id="hKt-wg-jfk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="UE7-5u-Ger" secondAttribute="trailing" constant="245" id="jrg-vt-kh1"/>
+                    <constraint firstAttribute="bottom" secondItem="f3k-fl-xsK" secondAttribute="bottom" id="mRh-0N-lb2"/>
+                    <constraint firstItem="UE7-5u-Ger" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="nDI-WH-Kjd"/>
+                    <constraint firstItem="f3k-fl-xsK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qNp-bO-5A5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="butgr" destination="f3k-fl-xsK" id="6E2-fu-Ec4"/>
+                <outlet property="butgs" destination="AJI-P9-6mS" id="R8c-hy-YvT"/>
+                <outlet property="labgs" destination="aOn-BD-Yni" id="fEK-Dp-ClN"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="yy_select_disabled" width="34" height="34"/>
+    </resources>
+</document>

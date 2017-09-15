@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="46" id="KGk-i7-Jjw" customClass="touwTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3H-Y1-GA1">
+                        <rect key="frame" x="8" y="0.0" width="182" height="40"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <color key="NSColor" red="0.97506362199999996" green="0.70391981000000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="11" name="PingFangSC-Light"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fj-el-bQh">
+                        <rect key="frame" x="198" y="-1" width="117" height="40"/>
+                        <attributedString key="attributedText">
+                            <fragment content="订单状态:未发货">
+                                <attributes>
+                                    <color key="NSColor" red="0.97506362199999996" green="0.70391981000000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="11" name="PingFangSC-Light"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="j3H-Y1-GA1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ECD-vV-Ank"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0fj-el-bQh" secondAttribute="trailing" constant="-3" id="FFv-0O-Gxi"/>
+                    <constraint firstAttribute="trailing" secondItem="j3H-Y1-GA1" secondAttribute="trailing" constant="130" id="JDB-5S-E29"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="0fj-el-bQh" secondAttribute="bottom" constant="-7.5" id="MIv-2B-aET"/>
+                    <constraint firstItem="0fj-el-bQh" firstAttribute="leading" secondItem="j3H-Y1-GA1" secondAttribute="trailing" constant="8" id="c7S-Nm-KeR"/>
+                    <constraint firstAttribute="bottom" secondItem="j3H-Y1-GA1" secondAttribute="bottom" constant="-0.5" id="mY8-tS-5cI"/>
+                    <constraint firstItem="j3H-Y1-GA1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="n4F-K3-oGb"/>
+                    <constraint firstItem="0fj-el-bQh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-9" id="t5u-bX-37L"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lab1" destination="j3H-Y1-GA1" id="rTB-Hb-C5i"/>
+                <outlet property="lab2" destination="0fj-el-bQh" id="tT6-Qe-E3C"/>
+            </connections>
+            <point key="canvasLocation" x="-108" y="94"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="KGk-i7-Jjw" customClass="AddbgTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="默认图片" translatesAutoresizingMaskIntoConstraints="NO" id="17r-3W-8sG" customClass="默认">
+                        <rect key="frame" x="8" y="3" width="304" height="79"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okR-Ht-5TW">
+                        <rect key="frame" x="183" y="82" width="129" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.21088040225872118" green="0.51465216402744951" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NX-7a-dUJ">
+                        <rect key="frame" x="8" y="85" width="20" height="20"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不在线" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfs-1M-ktG">
+                        <rect key="frame" x="32" y="81" width="41" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.21088040229999999" green="0.51465216400000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Sfs-1M-ktG" secondAttribute="bottom" constant="-5" id="36F-74-xOl"/>
+                    <constraint firstItem="okR-Ht-5TW" firstAttribute="leading" secondItem="Sfs-1M-ktG" secondAttribute="trailing" constant="110" id="4bs-iu-1qL"/>
+                    <constraint firstItem="1NX-7a-dUJ" firstAttribute="top" secondItem="17r-3W-8sG" secondAttribute="bottom" constant="3" id="8J8-De-Of3"/>
+                    <constraint firstAttribute="bottom" secondItem="1NX-7a-dUJ" secondAttribute="bottom" constant="4" id="9Iz-Is-9LU"/>
+                    <constraint firstItem="17r-3W-8sG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="BJ1-Gw-e8h"/>
+                    <constraint firstItem="Sfs-1M-ktG" firstAttribute="leading" secondItem="1NX-7a-dUJ" secondAttribute="trailing" constant="4" id="BdH-px-f03"/>
+                    <constraint firstAttribute="bottom" secondItem="17r-3W-8sG" secondAttribute="bottom" constant="27" id="Cvs-nE-e8C"/>
+                    <constraint firstAttribute="trailing" secondItem="17r-3W-8sG" secondAttribute="trailing" constant="8" id="SIY-Gu-sGh"/>
+                    <constraint firstAttribute="bottom" secondItem="okR-Ht-5TW" secondAttribute="bottom" constant="0.5" id="TT0-0A-1mf"/>
+                    <constraint firstItem="1NX-7a-dUJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="W1G-Cv-rIm"/>
+                    <constraint firstItem="Sfs-1M-ktG" firstAttribute="top" secondItem="17r-3W-8sG" secondAttribute="bottom" constant="-1" id="YDj-DS-ynw"/>
+                    <constraint firstItem="17r-3W-8sG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="bXo-CR-yVz"/>
+                    <constraint firstItem="okR-Ht-5TW" firstAttribute="top" secondItem="17r-3W-8sG" secondAttribute="bottom" id="o4J-Ez-rXS"/>
+                    <constraint firstAttribute="trailing" secondItem="okR-Ht-5TW" secondAttribute="trailing" constant="8" id="s6T-C3-nw9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Sfs-1M-ktG" secondAttribute="trailing" constant="239" id="vsx-cQ-FQI"/>
+                    <constraint firstItem="Sfs-1M-ktG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="24" id="wM6-Av-zrF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="butimag" destination="1NX-7a-dUJ" id="Z0K-To-MCS"/>
+                <outlet property="imagbg" destination="17r-3W-8sG" id="hF6-Ss-SdL"/>
+                <outlet property="labbh" destination="okR-Ht-5TW" id="CcN-Dh-9OK"/>
+                <outlet property="labzaix" destination="Sfs-1M-ktG" id="N5Y-cw-09N"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="59.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="默认图片" width="449" height="300"/>
+    </resources>
+</document>

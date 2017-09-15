@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SearchTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="历史关键词" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYN-Ms-x79">
+                        <rect key="frame" x="27" y="13" width="251" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewK-be-Bsp">
+                        <rect key="frame" x="295" y="15" width="15" height="15"/>
+                        <state key="normal" image="删除"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgu-nK-UJT">
+                        <rect key="frame" x="8" y="7.5" width="19" height="28.5"/>
+                        <state key="normal" image="时间"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="mgu-nK-UJT" secondAttribute="leading" id="0Q4-Qc-1sk"/>
+                    <constraint firstItem="ewK-be-Bsp" firstAttribute="leading" secondItem="GYN-Ms-x79" secondAttribute="trailing" constant="17" id="7Qp-Qj-8zQ"/>
+                    <constraint firstItem="GYN-Ms-x79" firstAttribute="centerY" secondItem="mgu-nK-UJT" secondAttribute="centerY" id="7cL-lN-rai"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mgu-nK-UJT" secondAttribute="trailing" constant="285" id="9fH-xu-YCq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ewK-be-Bsp" secondAttribute="trailing" constant="2" id="QRj-ip-DjT"/>
+                    <constraint firstItem="ewK-be-Bsp" firstAttribute="centerY" secondItem="GYN-Ms-x79" secondAttribute="centerY" constant="0.5" id="ZMQ-kW-7za"/>
+                    <constraint firstItem="mgu-nK-UJT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" multiplier="1:3" constant="5" id="ZrI-jU-R4S"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="GYN-Ms-x79" secondAttribute="trailing" constant="34" id="dHd-Qj-J2b"/>
+                    <constraint firstItem="GYN-Ms-x79" firstAttribute="leading" secondItem="mgu-nK-UJT" secondAttribute="trailing" id="kJ1-8b-qWf"/>
+                    <constraint firstAttribute="topMargin" secondItem="ewK-be-Bsp" secondAttribute="top" constant="-7" id="n65-CW-6lR"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mgu-nK-UJT" secondAttribute="bottom" id="uD0-LJ-2xN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="SCbut" destination="ewK-be-Bsp" id="2El-cf-2tn"/>
+                <outlet property="lab" destination="GYN-Ms-x79" id="OUM-20-g2d"/>
+                <outlet property="wuxbut" destination="mgu-nK-UJT" id="Wzg-2d-Rhb"/>
+            </connections>
+            <point key="canvasLocation" x="-354" y="117"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="删除" width="64" height="64"/>
+        <image name="时间" width="14" height="14"/>
+    </resources>
+</document>

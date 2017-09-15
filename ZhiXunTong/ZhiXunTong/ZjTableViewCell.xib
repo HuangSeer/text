@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ZjTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小计:¥1000000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obb-u0-uMu">
+                        <rect key="frame" x="199" y="8" width="113" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共计 1 件 商品" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXe-2Y-1vr">
+                        <rect key="frame" x="8" y="8" width="189" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="zXe-2Y-1vr" secondAttribute="bottom" id="4xE-UC-gzW"/>
+                    <constraint firstItem="Obb-u0-uMu" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="75k-ib-C1s"/>
+                    <constraint firstItem="zXe-2Y-1vr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Ete-sL-zkA"/>
+                    <constraint firstItem="zXe-2Y-1vr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="YnS-AW-tfE"/>
+                    <constraint firstItem="Obb-u0-uMu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="dxs-oT-Y19"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Obb-u0-uMu" secondAttribute="bottom" id="fSp-xL-WBc"/>
+                    <constraint firstItem="Obb-u0-uMu" firstAttribute="leading" secondItem="zXe-2Y-1vr" secondAttribute="trailing" constant="2" id="iT5-pr-F11"/>
+                    <constraint firstItem="Obb-u0-uMu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="191" id="tdd-Ax-jVY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labcount" destination="zXe-2Y-1vr" id="rWN-mL-R1U"/>
+                <outlet property="labprice" destination="Obb-u0-uMu" id="4Ev-a0-3kN"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

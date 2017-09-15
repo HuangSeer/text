@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bm3-V0-JsB" customClass="DianShangHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="450"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Uq-3H-ZbJ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shop_jf" translatesAutoresizingMaskIntoConstraints="NO" id="jfs-YP-h93">
+                    <rect key="frame" x="10" y="208" width="144" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shop_pp" translatesAutoresizingMaskIntoConstraints="NO" id="qL3-Oa-4hN">
+                    <rect key="frame" x="162" y="208" width="147" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shop_sh" translatesAutoresizingMaskIntoConstraints="NO" id="EHN-2Z-AkV">
+                    <rect key="frame" x="10" y="286" width="144" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shop_tj" translatesAutoresizingMaskIntoConstraints="NO" id="5E3-fe-N96">
+                    <rect key="frame" x="162" y="286" width="147" height="148"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shop_fj" translatesAutoresizingMaskIntoConstraints="NO" id="n0b-VI-YXK">
+                    <rect key="frame" x="10" y="364" width="144" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="GunDongView" destination="7Uq-3H-ZbJ" id="i8O-hc-Xht"/>
+                <outlet property="ImgView01" destination="jfs-YP-h93" id="v3w-eC-0RH"/>
+                <outlet property="ImgView02" destination="qL3-Oa-4hN" id="DNI-Hi-VZj"/>
+                <outlet property="ImgView03" destination="EHN-2Z-AkV" id="PB1-R3-wfM"/>
+                <outlet property="ImgView04" destination="n0b-VI-YXK" id="bAx-6U-EXE"/>
+                <outlet property="ImgView05" destination="5E3-fe-N96" id="ErC-Hp-HTG"/>
+            </connections>
+            <point key="canvasLocation" x="-35" y="8"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shop_fj" width="506" height="247"/>
+        <image name="shop_jf" width="506" height="247"/>
+        <image name="shop_pp" width="506" height="247"/>
+        <image name="shop_sh" width="506" height="245"/>
+        <image name="shop_tj" width="501" height="507"/>
+    </resources>
+</document>

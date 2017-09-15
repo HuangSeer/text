@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LiveCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="143" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="143" height="108"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bwq-R2-RbW">
+                        <rect key="frame" x="0.0" y="0.0" width="143" height="79"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjv-s0-vvB">
+                        <rect key="frame" x="5" y="80" width="133" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bwq-R2-RbW" secondAttribute="trailing" id="Gy1-Rf-ayy"/>
+                <constraint firstAttribute="bottom" secondItem="bwq-R2-RbW" secondAttribute="bottom" constant="29" id="WbM-gE-Tgb"/>
+                <constraint firstAttribute="trailing" secondItem="Xjv-s0-vvB" secondAttribute="trailing" constant="5" id="ckt-1l-qXO"/>
+                <constraint firstAttribute="bottom" secondItem="Xjv-s0-vvB" secondAttribute="bottom" id="iSW-oS-uEc"/>
+                <constraint firstItem="bwq-R2-RbW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kHo-2K-DwH"/>
+                <constraint firstItem="Xjv-s0-vvB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="oeM-uD-z5m"/>
+                <constraint firstItem="bwq-R2-RbW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="q9h-Bp-YGV"/>
+                <constraint firstItem="Xjv-s0-vvB" firstAttribute="top" secondItem="bwq-R2-RbW" secondAttribute="bottom" constant="1" id="zsC-ux-VQ2"/>
+            </constraints>
+            <size key="customSize" width="143" height="108"/>
+            <connections>
+                <outlet property="imagLIve" destination="bwq-R2-RbW" id="vDV-w5-fYD"/>
+                <outlet property="lablive" destination="Xjv-s0-vvB" id="TBw-Iv-IoF"/>
+            </connections>
+            <point key="canvasLocation" x="80.5" y="183"/>
+        </collectionViewCell>
+    </objects>
+</document>

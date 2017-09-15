@@ -1,0 +1,6 @@
+framework module AnjubaoSDK {
+  umbrella header "AnjubaoSDK.h"
+
+  export *
+  module * { export * }
+}

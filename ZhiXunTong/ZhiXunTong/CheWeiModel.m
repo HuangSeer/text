@@ -1,0 +1,13 @@
+//
+//  CheWeiModel.m
+//  ZhiXunTong
+//
+//  Created by Mou on 2017/7/18.
+//  Copyright © 2017年 airZX. All rights reserved.
+//
+
+#import "CheWeiModel.h"
+
+@implementation CheWeiModel
+
+@end
